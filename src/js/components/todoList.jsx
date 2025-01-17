@@ -34,7 +34,7 @@ function hideX(){
             <h1 style={{textAlign:"center", fontSize:"80px", fontWeight:"lighter", marginTop:"20px"}}>todos</h1>
             <ul style={{listStyle:"none"}}>
                 <li><input type="text" value={input} onChange={(e)=>setInput(e.target.value)} onKeyDown={addTask} className="form-control" id="input" style={{border: "solid grey 1px", height:"30px", marginTop:"0px",width:"600px", height:"45px", margin: "0 auto", borderRadius:"0px", backgroundColor:"#f5f5f5", paddingLeft:"60px", fontSize:"20px"}}/></li>
-                {tasks.length === 0 ? (<li style={{border: "solid grey 1px", marginTop:"0px", width:"600px", height:"45px", margin: "0 auto", display:"flex", alignItems: "center", justifyContent:"space-between", paddingLeft: "60px", paddingRight:"10px", fontSize:"20px"}}>
+                {tasks.length === 0 ? (<li style={{border: "solid grey 1px", marginTop:"0px", width:"600px", height:"45px", margin: "0 auto", display:"flex", alignItems: "center", justifyContent:"space-between", paddingLeft: "10px", paddingRight:"10px", fontSize:"20px",}}>
                     No tasks, add a task
                 </li>
             ) : (
